@@ -11,6 +11,8 @@
 |
 */
 
+\Auth::routes(['register' => true]);
+
 Route::get('/', function () {
     return view('welcome');
 });

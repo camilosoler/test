@@ -1,5 +1,7 @@
 <?php
 
+use App\Services\UserService;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +16,6 @@
 \Auth::routes(['register' => true]);
 
 Route::get('/', function () {
-    return view('welcome');
+    $users = (new UserService)->allUsers();
+    return view('welcome', ['users' => $users]);
 });

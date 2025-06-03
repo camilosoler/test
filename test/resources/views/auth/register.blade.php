@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Registro</title>
+    <title>Registro - {!! env('APP_NAME') !!}</title>
     <style>
         .boton {
             background-color: #4CAF50;

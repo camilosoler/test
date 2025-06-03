@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Login - {!! env('APP_NAME') !!}</title>
 
     <style>
         .boton {
